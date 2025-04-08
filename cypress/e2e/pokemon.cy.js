@@ -2,8 +2,8 @@ describe('Покупка нового аватара для своего тре�
 
     it('Покупка аватара', function () {
          cy.visit('https://pokemonbattle.ru/login');
-         cy.get('#k_email').type('kiseleva.v0607@yandex.ru');
-         cy.get('#k_password').type('Teacher150198er');
+         cy.get('#k_email').type('user_login');
+         cy.get('#k_password').type('user_password');
          cy.get('.MuiButton-root').click();
          cy.get('.header_card_trainer').click();
          cy.get('.k_mobile > :nth-child(5)').click();
